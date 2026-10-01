@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "nombre": "Nebula Drift",
+    "categoria": "accion",
+    "plataforma": "PC · PS5",
+    "precio": 34990,
+    "imagen": "nebula-drift.svg",
+    "descripcion": "Carreras espaciales de alta velocidad con física orbital."
+  },
+  {
+    "id": 2,
+    "nombre": "Reino de Hollow",
+    "categoria": "rpg",
+    "plataforma": "Switch",
+    "precio": 27990,
+    "imagen": "reino-hollow.svg",
+    "descripcion": "RPG de fantasía oscura con mundo abierto no lineal."
+  },
+  {
+    "id": 3,
+    "nombre": "Bastión de Acero",
+    "categoria": "accion",
+    "plataforma": "PC · Xbox",
+    "precio": 29990,
+    "imagen": "bastion-acero.svg",
+    "descripcion": "Estrategia táctica por turnos con mechas modulares."
+  },
+  {
+    "id": 4,
+    "nombre": "Pixel Runner Collection",
+    "categoria": "rpg",
+    "plataforma": "Consola clásica",
+    "precio": 19990,
+    "imagen": "pixel-runner.svg",
+    "descripcion": "Antología de 12 plataformeros de los 90 remasterizados."
+  },
+  {
+    "id": 5,
+    "nombre": "Marea Carmesí",
+    "categoria": "accion",
+    "plataforma": "PS5",
+    "precio": 32990,
+    "imagen": "marea-carmesi.svg",
+    "descripcion": "Aventura narrativa submarina con exploración libre."
+  },
+  {
+    "id": 6,
+    "nombre": "Circuito Fantasma",
+    "categoria": "rpg",
+    "plataforma": "PC",
+    "precio": 24990,
+    "imagen": "circuito-fantasma.svg",
+    "descripcion": "Hackea, corre y escapa en una metrópolis cyberpunk."
+  }
+]
