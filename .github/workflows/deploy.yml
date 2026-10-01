@@ -1,0 +1,37 @@
+name: Deploy a GitHub Pages (gh-pages)
+
+# Se ejecuta automáticamente cada vez que subes cambios a la rama main.
+# Compila el proyecto React (npm run build) y publica el resultado
+# en la rama gh-pages, sin que necesites tener Node.js instalado
+# en tu computador.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el código del repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Compilar la aplicación (npm run build)
+        run: npm run build
+
+      - name: Publicar en la rama gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
